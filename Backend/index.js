@@ -51,7 +51,9 @@ app.post("/convertFile", upload.single("file"), (req, res, next) => {
         });
     }
 });
-
+app.get('/', (req, res) => {
+  res.send('hello world shabi')
+})
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 });
